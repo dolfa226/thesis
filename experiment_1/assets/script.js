@@ -22,6 +22,9 @@ $( function() {
     $( this ).css('z-index','1000');
 });
 
+window.onload = function() {
+  Sticker.init('.sticker');
+}
 
 } );
 

@@ -1,13 +1,13 @@
 body {
     background: #e3f2ff;
     font-family: "Degular";
-	/* background: linear-gradient(-45deg, #e3f2ff, #edf9fa, #7e9ede);
+	background: linear-gradient(-60deg, #fffdb8, #d6e4ff, #ffe0d4);
 	background-size: 400% 400%;
-    animation: gradient 20s ease infinite;
-    color: black; */
-
+    animation: gradient 15s ease infinite;
+    color: black;
 }
-/* 
+
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -18,11 +18,8 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-} */
-
-.text {
-    position: absolute;
 }
+
 
 #italic:hover {
     font-style: italic;
@@ -31,96 +28,123 @@ body {
 
 .header {
     margin: 0 auto;
-    text-align: center;
-    padding-top: 6%;
-    line-height: 150px;
+    padding-top: 10%;
     z-index: 10;
     position: relative;
+    padding-left: 4%;
 }
 
+
 .title {
-    font-size: 250px;
+    font-size: 180px;
+    /* font-weight: thin; */
+    line-height: 100px;
 }
 
 .subtitle {
-    font-size: 36px;
+    padding-top: 60px;
+    font-size: 24px;
 }
 
+
 .allnatural {
-    position: absolute;
-    top: 200px;
-    left: 70vw;
-    transform: rotate(20deg);
+    position: relative;
+    top: 170px;
+    left: 49vw;
+    transform: rotate(10deg);
     width: 160px;
-    /* z-index: 0; */
 }
+
+/* stickers */
+.sticker {
+    /* background-color:red; */
+    position: absolute; 
+    width: 200px;
+    z-index: 10;
+}
+
+/* add image */
+.example-1 .sticker-img {
+    background-image: url(../assets/img/Wellness_Industry_Elitist/Wellness_Industry_102220_Organic.png);
+    background-size: 200px 200px;
+    /* background-color: #ff4a85; */
+}
+
 
 .draggable {
     cursor: move;
     position: absolute;
 }
 
-/* calamansi honey */
+/* Calamansi Honey */
 .ui-accordion-content .draggable1 {
-   top: 30vw; 
+   position: absolute;
+   top: 10vw; 
    left: 20vw;
    width: 300px;
    transform: rotate(5deg);
 }   
 
 /* Careof */
-.draggable2 {
-    /* top: 30vw;  */
+.ui-accordion-content .draggable2 {
+    position: absolute;
+    top: 20vw; 
     left: 35vw;
     width: 300px;
+    transform: rotate(12deg);
  }   
 
 /* HUM */
-.draggable3 {
-    top: 25vw; 
-    left: 60vw;
+.ui-accordion-content .draggable3 {
+    position: absolute;
+    top: 6vw; 
+    left: 40vw;
     height: 340px;
     transform: rotate(17deg);
 } 
 
 /* Love Wellness */
-.draggable4 {
-    top: 30vw; 
-    left: 70vw;
-    width: 200px;
+.ui-accordion-content .draggable4 {
+    position: absolute;
+    top: 25vw; 
+    left: 60vw;
     transform: rotate(-10deg);
 } 
 
 /* Persona */
-.draggable5 {
-    top: 40vw; 
+.ui-accordion-content .draggable5 {
+    position: absolute;
+    top: 10vw; 
     left: 40vw;
     width: 400px;
     transform: rotate(-10deg);
 } 
 
 /* Pineapple */
-.draggable6 {
-    top: 25vw; 
+.ui-accordion-content .draggable6 {
+    position: absolute;
+    top: 6vw; 
     left: 0vw;
     width: 390px;
     transform: rotate(-10deg);
 } 
 
 /* Pineapple */
-.draggable7 {
-    top: 43vw; 
-    left: 30vw;
-    width: 390px;
+.ui-accordion-content .draggable7 {
+    position: absolute;
+    top: 5vw; 
+    left: 20vw;
+    width: 330px;
     transform: rotate(-10deg);
 } 
 
 /* Pineapple */
-.draggable8 {
-    top: 43vw; 
-    left: 10vw;
+.ui-accordion-content .draggable8 {
+    position: absolute;
+    top: 20vw; 
+    left: 7vw;
     width: 390px;
-    transform: rotate(15deg);
+    transform: rotate(-4deg);
 } 
 
 #circle {
@@ -145,7 +169,7 @@ body {
 
 #accordion {
     position: relative;
-    padding-top: 5%;
+    padding-top: 10%;
     padding-bottom: 10%;
     width: 92%;
     margin: 0 auto;
@@ -156,24 +180,22 @@ body {
     font-family: "Degular";
     margin: 0px;
     border: none;
-    font-size: 60px;
+    font-size: 50px;
     border-bottom: 2px solid black;
     border-radius: 0px;
     padding-left: 0;
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 50px;
     color: black;
-    background: #e3f2ff;
-
-  }
-
+    background: transparent;
+}
 
 
 .ui-icon.iconClosed {
     background:url('icons/Down_Arrow.png') no-repeat !important;
     margin-top: 5px;
     padding: 30px;
-    transform: scale(.7);
+    transform: scale(.6);
     float: right;
 }
 
@@ -181,27 +203,54 @@ body {
     background: url('icons/Up_Arrow.png') no-repeat !important;
     margin-top: 5px;
     padding: 30px;
-    transform: scale(.7);
+    transform: scale(.6);
     float: right;
 }
 
 #accordion .ui-accordion-content {
     font-family: "Degular";
     color: black;
-    width: 100%;
-    height: 550px;
-    font-size: 40pt;
-    line-height: 40pt;
+    width: 90%;
+    height: 680px;
     border: none;
-    overflow: auto !important; 
-    background-color: #e3f2ff;
-    margin: 00px;
+    background-color: transparent;
+    margin: 20px;
     padding: 30px;
+    position: relative;
+    
+    /* background-color: red;; */
+}
+
+
+.text {
+    position: relative;
+    font-size: 40px;
+    width: 80%;
+}
+
+.smalltext {
+    position: relative;
+    font-size: 40px;
+    width: 80%;
+    font-size: 30px;
+}
+
+
+.ui-accordion .ui-accordion-content{
+    overflow:visible !important;
     
 }
+
 
 
 
 :focus {
     outline:0 !important;
 }
+
+.footer{
+    padding-bottom: 5%;
+    padding-left: 4%;
+    font-size: 24px;
+}
+
