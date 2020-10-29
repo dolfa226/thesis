@@ -147,15 +147,6 @@ body {
     transform: rotate(-4deg);
 } 
 
-#circle {
-    border-radius: 50%;
-}
-
-#circle:hover {
-    box-shadow: 2px 5px 8px #a1abad;
-    border-radius:50%;
-    transition: 0.3s;
-}
 
 #droppable {
     left: 300px;    
