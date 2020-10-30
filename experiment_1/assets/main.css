@@ -1,7 +1,6 @@
 body {
-    background: #e3f2ff;
     font-family: "Degular";
-	background: linear-gradient(-60deg, #fffdb8, #a8d8ff, #ffe0d4);
+	background: linear-gradient(-60deg, #eee4f7, #d5e7f2, #c6f5eb);
 	background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     color: black;
